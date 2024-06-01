@@ -14,14 +14,11 @@ public class InventoryUI : MonoBehaviour
 
     public void OnUpdateInventory()
     {
-        /*
-        Transform[] Hijos;
-        Hijos=this.GetComponentsInChildren<Transform>();
-        foreach (Transform t in Hijos)
+        // Limpiar todos los hijos del objeto transform antes de redibujar el inventario
+        foreach (Transform child in transform)
         {
-            Destroy(t.gameObject);
-        } */
-
+            Destroy(child.gameObject);
+        }
 
         DrawInventory();
     }

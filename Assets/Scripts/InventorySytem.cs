@@ -24,12 +24,10 @@ public class InventorySystem : MonoBehaviour
     {
         if (_itemDictionary.TryGetValue(itemData, out InventoryItem value))
         {
-            Debug.Log("SUMAR STACK EN ITEM.");
             value.AddStack();
         }
         else
         {
-            Debug.Log("AGREGAR UN NUEVO ITEM.");
             InventoryItem newItem = new InventoryItem(itemData);
             inventory.Add(newItem);
             _itemDictionary.Add(itemData, newItem);
