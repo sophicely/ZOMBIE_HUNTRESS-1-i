@@ -39,4 +39,3 @@ public class InventoryUI : MonoBehaviour
         slot.Set(item);
     }
  }
-

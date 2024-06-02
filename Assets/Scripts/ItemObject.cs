@@ -20,4 +20,3 @@ public class ItemObject : MonoBehaviour
         }
     }
 }
-
